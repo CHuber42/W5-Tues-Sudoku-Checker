@@ -1,20 +1,31 @@
-describe ('SudokuBoard', () => {
+import {aSudokuBoard, valuesArray, checkFirstRow, checkFirstColumn} from './../src/main.js'
 
-  let aSudokuBoard = [1, 2, 3, 4, 5, 6, 7, 8, 9,
-                  2, 3, 4, 5, 6, 7, 8, 9, 1, 
-                  3, 4, 5, 6, 7, 8, 9, 1, 2, 
-                  4, 5, 6, 7, 8, 9, 1, 2, 3,
-                  5, 6 ,7, 8, 9, 1, 2, 3, 4,
-                  6, 7, 8, 9, 1, 2, 3, 4, 5,
-                  7, 8, 9, 1, 2, 3, 4, 5, 6,
-                  8, 9, 1, 2, 3, 4, 5, 6, 7,
-                  9, 1, 2, 3, 4, 5, 6, 7]
 
+describe ('aSudokuBoard', () => {
+  let testArray = [];
+ 
   beforeEach(() => {
-    let valuesArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  })
+
+  test('Should check if valuesArray is correct', () => {
+    expect(testArray.length).toEqual(valuesArray.length);
   })
 
   test('Should check if board loaded', () => {
     expect(aSudokuBoard.length).toEqual(81);
   })
+  
+  test('Should reduce valuesArray to empty by finding elements and removing them', () => {
+    checkFirstRow();
+    expect(valuesArray.length).toEqual(0);
+  })
+
+
+  
+  // test('Should reduce valuesArray to empty by finding elements and removing them', () => {
+  //   checkFirstColumn();
+  //   expect(valuesArray.length).toEqual(0);
+  // })
+  
 })
