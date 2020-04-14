@@ -19,8 +19,8 @@ describe ('aSudokuBoard', () => {
   })
   
   test('Should reduce valuesArray to empty by finding elements in first row and removing them', () => {
-    checkFirstRow();
-    expect(valuesArray.length).toEqual(0);
+    let result = checkFirstRow();
+    expect(result).toBe("Legal!");
   })
 
   test('Should reduce valuesArray to empty by finding elements in first column and removing them', () => {
