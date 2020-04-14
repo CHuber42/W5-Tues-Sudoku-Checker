@@ -42,10 +42,9 @@ export function checkFirstRow() {
   for (let i = 0; i < 82; i++){    
     if (i%9 == 0 && i > 0) {
       if (valuesArray.length > 0) {
-        console.log(i)
         return "Illegal!";
       }
-      else if (valuesArray.length == 0) {
+      else if (valuesArray.length == 0 && i == 81) {
         return "Legal!"
       }
       else {
