@@ -5,10 +5,26 @@
 .row {
   margin: auto;
   width: 40vw;
+
 }
 
 input {
   width: 4vw;
   height: 5vh;
   text-align: center;
+}
+
+button {
+  margin: auto;
+  margin-left: 44vw;
+}
+
+.container {
+  height: 60vh;
+
+}
+
+body {
+  height: 80vh;
+
 }
