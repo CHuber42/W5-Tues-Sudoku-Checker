@@ -23,8 +23,6 @@ describe ('aSudokuBoard', () => {
     expect(valuesArray.length).toEqual(0);
   })
 
-
-
   test('Should reduce valuesArray to empty by finding elements in first column and removing them', () => {
     checkFirstColumn();
     expect(valuesArray.length).toEqual(0);
