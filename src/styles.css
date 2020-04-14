@@ -26,5 +26,10 @@ button {
 
 body {
   height: 80vh;
+}
 
+p {
+  margin-left: 43vw;
+  font-size: xx-large;
+  font-weight: 900;
 }

@@ -79,10 +79,10 @@ $("button").click(function(event) {
   let columnLegal = checkFirstColumn();
   let rowLegal = checkFirstRow();
   if ((rowLegal == "Legal!") && (columnLegal == "Legal!")) {
-    //print legal
+    $("#conclusion").append("Legal!")
   }
   else {
-    //print illegal
+    $("#conclusion").append("Illegal!")
   }
 });
   
