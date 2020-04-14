@@ -27,15 +27,15 @@ export function checkFirstRow() {
   }
 }
 
-// export function checkFirstColumn() {
-//   for (let i = 0; i < 9; i++){
-//     let checking_num = aSudokuBoard[i*9];
-//     loopInner:
-//     for (let j = 0; j < 9; j++) {
-//       if (valuesArray[j] == checking_num) {
-//         valuesArray.splice(j, 1);
-//         break loopInner;
-//       }
-//     }
-//   }
-// }
+export function checkFirstColumn() {
+  for (let i = 0; i < 9; i++){
+    let checking_num = aSudokuBoard[i*9];
+    loopInner:
+    for (let j = 0; j < 9; j++) {
+      if (valuesArray[j] == checking_num) {
+        valuesArray.splice(j, 1);
+        break loopInner;
+      }
+    }
+  }
+}

@@ -16,16 +16,16 @@ describe ('aSudokuBoard', () => {
     expect(aSudokuBoard.length).toEqual(81);
   })
   
-  test('Should reduce valuesArray to empty by finding elements and removing them', () => {
-    checkFirstRow();
-    expect(valuesArray.length).toEqual(0);
-  })
-
-
-  
-  // test('Should reduce valuesArray to empty by finding elements and removing them', () => {
-  //   checkFirstColumn();
+  // test('Should reduce valuesArray to empty by finding elements in first row and removing them', () => {
+  //   checkFirstRow();
   //   expect(valuesArray.length).toEqual(0);
   // })
+
+
+
+  test('Should reduce valuesArray to empty by finding elements in first column and removing them', () => {
+    checkFirstColumn();
+    expect(valuesArray.length).toEqual(0);
+  })
   
 })
