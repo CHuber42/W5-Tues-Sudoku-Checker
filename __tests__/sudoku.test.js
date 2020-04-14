@@ -9,17 +9,19 @@ describe ('aSudokuBoard', () => {
   })
 
   test('Should check if valuesArray is correct', () => {
-    expect(testArray.length).toEqual(valuesArray.length);
+    for (let i = 0; i < 9; i++) {
+      expect(testArray[i]).toEqual(valuesArray[i]);
+    }  
   })
 
   test('Should check if board loaded', () => {
     expect(aSudokuBoard.length).toEqual(81);
   })
   
-  // test('Should reduce valuesArray to empty by finding elements in first row and removing them', () => {
-  //   checkFirstRow();
-  //   expect(valuesArray.length).toEqual(0);
-  // })
+  test('Should reduce valuesArray to empty by finding elements in first row and removing them', () => {
+    checkFirstRow();
+    expect(valuesArray.length).toEqual(0);
+  })
 
 
 
